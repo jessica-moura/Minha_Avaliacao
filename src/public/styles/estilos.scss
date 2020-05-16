@@ -1,0 +1,364 @@
+@import 'fontes';
+@import 'cores';
+
+body{
+    margin: 0;
+}
+ 
+#banner{ 
+    background-color: $cor-banner;
+    color:white;
+    text-align: center;
+    padding: 20px 0px 10px 0px; 
+
+    h1{
+        font-family: $fonte-decorativa;
+        font-size: 250%;   
+        text-shadow: 1px 1px black;
+    }
+ 
+    p{ 
+        font-family: $fonte-negrito;  
+
+    }
+}
+#imgFut {
+    background-image: url(../img/Arthur.jpg); 
+    height: 500px; 
+    background-position: center; 
+    background-size: cover;
+    position: relative;
+    width: 50%;
+    margin: auto;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px #777777;
+}
+
+  
+#home{
+    border-radius: 5px; 
+    padding: 10px;
+    margin: 20px 0px 20px 0px; 
+    box-shadow: 5px 5px 10px #777777; 
+    font-family: $fonte-padrao; 
+    text-align: center;
+    font-size: 100%;
+    
+}
+
+#centro{
+    display:inline;
+    font-family: $fonte-padrao;
+
+}
+
+#menu{
+    background-color: $cor-menu;
+    color: white;
+    padding: 20px 0px 10px 20px;
+    text-align: center;
+
+    ul {
+        list-style: none;
+        padding-left: 0;
+       
+        a {
+            text-decoration: none;
+            color: white;
+            &:hover{
+                color: $cor-hover;
+            }
+        }
+
+        li {
+            margin-bottom: 7px;
+            display: inline;
+            padding: 20px;
+            font-size: 100%;
+        }
+    }
+}
+
+
+#conteudo{
+    
+    padding:10px;
+   
+}    
+
+#biografia{
+   
+    text-align: justify; 
+    box-shadow: 5px 5px 10px #777777;   
+    border-radius: 5px;
+    text-align: center;  
+     
+
+    p{
+        text-align: left;
+        text-align: justify;
+        font-family: $fonte-padrao;    
+        font-size: 100%;  
+        padding: 10px;   
+        
+    }
+
+    h1{
+        font-size: 100%;
+        text-align: left;
+        padding: 10px;
+
+    }
+
+    h2{
+           font-size: 100%;
+    }  
+
+    img{        
+        width: 20%;
+        border-radius: 5px;           
+        box-shadow: 5px 5px 10px #777777;   
+        margin: 10px;
+        
+        
+    }    
+}     
+
+ 
+#portfolio{
+
+    margin-top: 20px; 
+    font-family: $fonte-negrito;  
+    text-align: justify;
+    #Loja_ficticia{ 
+        
+        display: table-cell;
+        padding: 10px;
+         
+        img{   
+        
+            min-height: 100%;       
+            box-shadow: 5px 5px 10px #777777; 
+            min-width: 100%; 
+            max-width: 50%;
+        } 
+    
+    }
+  
+    #Continua_site{ 
+        display: table-cell;
+        padding: 10px;
+        
+       
+        img{  
+             
+            min-height: 100%;  
+            box-shadow: 5px 5px 10px #777777;  
+            min-width: 100%; 
+            max-width: 100%;
+        }
+    } 
+}
+
+#portfolio2{
+    margin-top: 20px; 
+    margin-bottom: 10px;
+   
+    #cadastro{
+        display: table-cell; 
+        padding: 10px; 
+        font-family: $fonte-negrito; 
+         
+        img{   
+            
+            min-height: 153%;   
+            box-shadow: 5px 5px 10px #777777;    
+            min-width: 100%;
+            max-width: 100%;
+        }
+    }
+ 
+
+.contato{
+    font-family: $fonte-negrito; 
+    box-shadow: 5px 5px 10px #777777;
+    padding: 10px;
+    border-radius: 5px; 
+    margin-top: 10px;
+    margin-bottom: 10px;
+    
+    #facebook, #insta, #email{ 
+        display: table-cell;
+    }
+  
+    #alinhar{
+        display: table-cell;
+        vertical-align: middle;
+        padding: 20px;
+    }
+  
+}
+ 
+
+#rodape{
+    background-color: $cor-rodape;
+    color: white;
+    padding: 20px;
+    font-size: 80%;
+    font-family: $fonte-negrito;
+}
+
+@media only screen and (max-device-width:600px) {
+
+    #banner{ 
+        
+        width: 100%;   
+    
+        h1{ 
+        
+            font-size: 350%;        
+           
+        } 
+      
+        p{ 
+            font-family: $fonte-negrito;  
+            font-size: 150%;
+        }
+    }
+
+
+    #home{
+        font-size: 80%;   
+        margin: 15px;  
+    }
+
+    #menu{ 
+        
+    
+        ul {
+            
+            li {
+                font-size: 200%;  
+            }  
+        }
+    }
+
+    #conteudo{
+        margin: 20px;
+    }
+    
+     
+    #biografia{
+        width: 100%;
+        
+        text-align: center; 
+        padding: 0px;
+        p{
+            text-align: left;
+            text-align: justify;
+            font-family: $fonte-padrao;    
+            font-size: 80%;   
+            padding: 15px;    
+        }
+
+        h1{
+            font-size: 80%;
+            text-align: left; 
+            padding: 10px;
+
+        }
+
+        h2{
+            font-size: 80%;
+        }
+
+        img{       
+            width: 30%;
+            border-radius: 5px;        
+            box-shadow: 5px 5px 10px #777777; 
+            
+        }    
+    }     
+
+        
+    .contato{
+        
+        text-align: center; 
+        
+        h2{
+            font-size: 200%; 
+        }
+
+        #facebook, #insta, #email{ 
+            display: block;  
+            text-align: center; 
+            width: 100%; 
+        }
+    
+        #alinhar{  
+            display: block;
+            text-align: center; 
+            font-size: 200%;  
+        }
+    
+    }
+
+          
+    #portfolio{
+
+        font-size: 80%; 
+  
+        #Loja_ficticia{ 
+            margin: auto;
+            display: block;
+          
+            img{  
+               
+               
+                box-shadow: 5px 5px 10px #777777; 
+                min-width: 100%;   
+                max-width: 50%;  
+            }
+        
+        }
+    
+        #Continua_site{ 
+            display: block;
+            margin: auto;
+           
+            img{  
+                
+                min-width: 100%; 
+                max-width: 100%;
+            }
+        } 
+    }
+
+    #portfolio2{
+        
+        font-size:80%;
+
+        #cadastro{
+            display: block; 
+            margin: auto; 
+            
+            img{   
+                
+                min-height: 153%;   
+                box-shadow: 5px 5px 10px #777777;     
+                min-width: 100%;
+                max-width: 100%;
+            }
+        }
+    
+
+
+        
+    #rodape{
+        padding: 20px;
+        font-size: 150%;   
+        
+                  }
+         }
+     }
+}

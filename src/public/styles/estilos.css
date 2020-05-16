@@ -1,0 +1,217 @@
+@font-face {
+  font-family: 'padrao';
+  src: url(../fonts/Montserrat-Regular.ttf); }
+
+@font-face {
+  font-family: 'negrito';
+  src: url(../fonts/Montserrat-Bold.ttf); }
+
+@font-face {
+  font-family: 'decorativa';
+  src: url(../fonts/BowlbyOneSC-Regular.ttf); }
+
+body {
+  margin: 0; }
+
+#banner {
+  background-color: #8B8682;
+  color: white;
+  text-align: center;
+  padding: 20px 0px 10px 0px; }
+  #banner h1 {
+    font-family: "decorativa";
+    font-size: 250%;
+    text-shadow: 1px 1px black; }
+  #banner p {
+    font-family: "negrito"; }
+
+#home {
+  border-radius: 5px;
+  padding: 10px;
+  margin: 20px 0px 20px 0px;
+  box-shadow: 5px 5px 10px #777777;
+  font-family: "padrao";
+  text-align: center;
+  font-size: 100%; }
+
+
+#centro {
+  display: inline;
+  font-family: "padrao"; }
+
+#menu {
+  background-color: black;
+  color: white;
+  padding: 20px 0px 10px 20px;
+  text-align: center; }
+  #menu ul {
+    list-style: none;
+    padding-left: 0; }
+    #menu ul a {
+      text-decoration: none;
+      color: white; }
+      #menu ul a:hover {
+        color: #c5eff7; }
+    #menu ul li {
+      margin-bottom: 7px;
+      display: inline;
+      padding: 20px;
+      font-size: 100%; }
+
+#conteudo {
+  padding: 10px; }
+
+#biografia {
+  text-align: justify;
+  box-shadow: 5px 5px 10px #777777;
+  border-radius: 5px;
+  text-align: center; }
+  #biografia p {
+    text-align: left;
+    text-align: justify;
+    font-family: "padrao";
+    font-size: 100%;
+    padding: 10px; }
+  #biografia h1 {
+    font-size: 100%;
+    text-align: left;
+    padding: 10px; }
+  #biografia h2 {
+    font-size: 100%; }
+  #biografia img {
+    width: 20%;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px #777777;
+    margin: 10px; }
+
+#portfolio {
+  margin-top: 20px;
+  font-family: "negrito";
+  text-align: justify; }
+  #portfolio #Loja_ficticia {
+    display: table-cell;
+    padding: 10px; }
+    #portfolio #Loja_ficticia img {
+      min-height: 100%;
+      box-shadow: 5px 5px 10px #777777;
+      min-width: 100%;
+      max-width: 50%; }
+  #portfolio #Continua_site {
+    display: table-cell;
+    padding: 10px; }
+    #portfolio #Continua_site img {
+      min-height: 100%;
+      box-shadow: 5px 5px 10px #777777;
+      min-width: 100%;
+      max-width: 100%; }
+
+#portfolio2 {
+  margin-top: 20px;
+  margin-bottom: 10px; }
+  #portfolio2 #cadastro {
+    display: table-cell;
+    padding: 10px;
+    font-family: "negrito"; }
+    #portfolio2 #cadastro img {
+      min-height: 153%;
+      box-shadow: 5px 5px 10px #777777;
+      min-width: 100%;
+      max-width: 100%; }
+
+.contato {
+  font-family: "negrito";
+  box-shadow: 5px 5px 10px #777777;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 10px;
+  margin-bottom: 10px; }
+  .contato #facebook, .contato #insta, .contato #email {
+    display: table-cell; }
+  .contato #alinhar {
+    display: table-cell;
+    vertical-align: middle;
+    padding: 20px; }
+
+#rodape {
+  background-color: #010303;
+  color: white;
+  padding: 20px;
+  font-size: 80%;
+  font-family: "negrito"; }
+
+@media only screen and (max-device-width: 600px) {
+  #banner {
+    width: 100%; }
+    #banner h1 {
+      font-size: 350%; }
+    #banner p {
+      font-family: "negrito";
+      font-size: 150%; }
+  #home {
+    font-size: 80%;5
+    margin: 15px; }
+  #menu ul li {
+    font-size: 200%; }
+  #conteudo {
+    margin: 20px; }
+  #biografia {
+    width: 100%;
+    text-align: center;
+    padding: 0px; }
+    #biografia p {
+      text-align: left;
+      text-align: justify;
+      font-family: "padrao";
+      font-size: 80%;
+      padding: 15px; }
+    #biografia h1 {
+      font-size: 80%;
+      text-align: left;
+      padding: 10px; }
+    #biografia h2 {
+      font-size: 80%; }
+    #biografia img {
+      width: 30%;
+      border-radius: 5px;
+      box-shadow: 5px 5px 10px #777777; }
+
+  .contato {
+    text-align: center; }
+    .contato h2 {
+      font-size: 200%; }
+    .contato #facebook, .contato #insta, .contato #email {
+      display: block;
+      text-align: center;
+      width: 100%; }
+    .contato #alinhar {
+      display: block;
+      text-align: center;
+      font-size: 200%; }
+  #portfolio {
+    font-size: 80%; }
+    #portfolio #Loja_ficticia {
+      margin: auto;
+      display: block; }
+      #portfolio #Loja_ficticia img {
+        box-shadow: 5px 5px 10px #777777;
+        min-width: 100%;
+        max-width: 50%; }
+    #portfolio #Continua_site {
+      display: block;
+      margin: auto; }
+      #portfolio #Continua_site img {
+        min-width: 100%;
+        max-width: 100%; }
+  #portfolio2 {
+    font-size: 80%; }
+    #portfolio2 #cadastro {
+      display: block;
+      margin: auto; }
+      #portfolio2 #cadastro img {
+        min-height: 153%;
+        box-shadow: 5px 5px 10px #777777;
+        min-width: 100%;
+        max-width: 100%; }
+  #rodape {
+    padding: 20px;
+    font-size: 150%; } 
